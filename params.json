@@ -1,6 +1,6 @@
 {
   "name": "JsAnimate",
   "tagline": "原生javascript实现的动画效果",
-  "body": "### 欢迎访问\r\n这是来自nooldey的javascript练习作品。\r\n目前拥有的内容包括：\r\n 1. js 多个相同标签元素，各自独立实现 淡入淡出 / 伸缩 动态效果\r\n 2. [js 登陆弹窗](http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E7%99%BB%E9%99%86%E5%BC%B9%E7%AA%97.html)：单击登陆按钮，弹出窗口，单击关闭则关闭窗口，是比较常见的一个组件\r\n 3. [js 选择菜单](https://github.com/nooldey/jsAnimate/blob/master/%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95.html)：鼠标单击弹出菜单，移动鼠标突出显示当前选中项，支持键盘 上、下 键选择及回车选中。\r\n\r\n### 更新\r\n本页更多内容将更新至 [我的练习演示](http://zhuweisheng.com.cn/demo/)",
+  "body": "### 欢迎访问\r\n这是来自nooldey的javascript练习作品。\r\n目前拥有的内容包括：\r\n 1. js 多个相同标签元素，各自独立实现 淡入淡出 / 伸缩 动态效果\r\n 2. [js 登陆弹窗](http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E7%99%BB%E9%99%86%E5%BC%B9%E7%AA%97.html)：单击登陆按钮，弹出窗口，单击关闭则关闭窗口，是比较常见的一个组件\r\n 3. [js 选择菜单](http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95.html)：鼠标单击弹出菜单，移动鼠标突出显示当前选中项，支持键盘 上、下 键选择及回车选中。\r\n\r\n### 更新\r\n本页更多内容将更新至 [我的练习演示](http://zhuweisheng.com.cn/demo/)",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
