@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-size: 14px;
+    font-family: 'Microsoft Yahei',sans-serif;
+    font-weight: 300;
+    padding: 0;
+    background: #efefef;
+}
+.movebox{
+    width:200px;
+    height:100px;
+    background: #FFF;
+    position: relative;
+    left:-200px;
+    top:20px;
+    border-radius: 3px;
+    box-shadow: 0 3px 5px #ccc;
+    filter: alpha(opacity:30);
+    opacity: 0.3;
+}
+.movebtn{
+    width:20px;
+    height:auto;
+    padding:8px 5px;
+    background-color: #FF5722;
+    color: #fff;
+    position: absolute;;
+    right:-30px;
+    top:10px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+}
