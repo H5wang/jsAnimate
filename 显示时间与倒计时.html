@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>javascript 倒计时</title>
+<style media="screen">
+    body{font-family: "Microsoft Yahei",
+        font-size:14px;}
+</style>
+<script language="javascript" type="text/javascript">
+
+  window.onload = function(){
+    showTime();
+    countDay();
+  }
+  function countDay(){
+      var timer = setInterval('countDay()',500);
+      var nowtime = new Date();
+      var endtime = new Date("2016/6/1,11:11:11");//结束时间
+      var lefttime = parseInt((endtime.getTime()-nowtime.getTime())/1000);//换算为毫秒差，及最小单位的差值
+      if (lefttime<0) {
+          document.getElementById('leftTime').innerHTML = "活动已结束";
+          clearInterval(timer);
+      }else{
+          var d = parseInt(lefttime/(24*60*60));
+          var h = parseInt(lefttime/(60*60)%24);
+          var m = parseInt(lefttime/60%60);
+          var s = parseInt(lefttime%60);
+          document.getElementById('leftTime').innerHTML = " "+d+"天"+h+"小时"+m+"分钟"+s+"秒";
+      }
+  }
+  function checkTime(i){  //补位处理
+      if(i<10){
+          return '0'+i;
+      }else{
+          return i;
+      }
+  }
+  function showTime(){
+    var myDate=new Date();
+    var year = myDate.getFullYear();
+    var month = myDate.getMonth()+1;
+    var day = myDate.getDate();
+    var h = myDate.getHours();
+    var m = myDate.getMinutes();
+    var s = myDate.getSeconds();
+    m=checkTime(m)
+    s=checkTime(s)
+    var weekday=new Array(7)
+    weekday[0]="星期日"
+    weekday[1]="星期一"
+    weekday[2]="星期二"
+    weekday[3]="星期三"
+    weekday[4]="星期四"
+    weekday[5]="星期五"
+    weekday[6]="星期六"
+    var week = weekday[myDate.getDay()];
+    document.getElementById("show").innerHTML=""+year+"年"+month+"月"+day+"日 "+  week +h+":"+m+":"+s;
+    t=setTimeout('showTime()',500)
+  }
+
+</script>
+</head>
+<body>
+<div class="content1">
+  <div>当前时间：</div><div id="show">显示当前时间的位置</div>
+  <div>剩余时间：</div><div id="leftTime">显示倒计时间</div>
+</div>
+</body>
+</html>
