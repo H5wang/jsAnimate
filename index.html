@@ -35,11 +35,16 @@
 目前拥有的内容包括：</p>
 
 <ol>
-<li>js 多个相同标签元素，各自独立实现 淡入淡出 / 伸缩 动态效果</li>
-<li>
-<a href="http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E7%99%BB%E9%99%86%E5%BC%B9%E7%AA%97.html">js 登陆弹窗</a>：单击登陆按钮，弹出窗口，单击关闭则关闭窗口，是比较常见的一个组件</li>
-<li>
-<a href="http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95.html">js 选择菜单</a>：鼠标单击弹出菜单，移动鼠标突出显示当前选中项，支持键盘 上、下 键选择及回车选中。</li>
+<li>js 多个拥有相同标签元素，各自独立实现 淡入淡出 / 伸缩 动态效果</li>
+</ol>
+
+<p>采用js封装的做法，将支持多种变换的js运动效果统一到一个通用的函数体内，通过<code>starMove(this,{width:333,height:500},fn)</code>即<code>函数名（对象，运动目标，链式动画【完成当前运动后调用的函数名】）</code>
+实现了多种动作同时进行，互不干扰，并保证每一个动作顺利完成，不会受到阻塞。
+具体内容请查看源码，实际效果点击按钮：<a href="http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/jsAnimate/index.html">查看在线演示</a></p>
+
+<ol>
+<li><p><a href="http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E7%99%BB%E9%99%86%E5%BC%B9%E7%AA%97.html">js 登陆弹窗</a>：单击登陆按钮，弹出窗口，单击关闭则关闭窗口，是比较常见的一个组件</p></li>
+<li><p><a href="http://htmlpreview.github.io/?https://github.com/nooldey/jsAnimate/blob/master/%E9%80%89%E6%8B%A9%E8%8F%9C%E5%8D%95.html">js 选择菜单</a>：鼠标单击弹出菜单，移动鼠标突出显示当前选中项，支持键盘 上、下 键选择及回车选中。</p></li>
 </ol>
 
 <h3>
